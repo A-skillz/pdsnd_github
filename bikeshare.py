@@ -62,7 +62,7 @@ def get_filters():
 
 
     print(f"\n")
-    print('='*60)
+    print('+'*60)
 
     return city, month, day
 
@@ -124,7 +124,7 @@ def time_stats(df,month,day):
 
     print(' Calculating Popular Times of Travel')
 
-    print('='*60)
+    print('+'*60)
 
     start_time = time.time()
 
@@ -158,9 +158,9 @@ def station_stats(df):
 
     """Displays statistics on the most popular stations and trip."""
     print(f"\n")
-    print('='*60)
+    print('+'*60)
     print(' Calculating The Most Popular Stations and Trip')
-    print('='*60)
+    print('+'*60)
 
     start_time = time.time()
 
@@ -183,9 +183,9 @@ def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
     print(f"\n")
-    print('='*60)
+    print('+'*60)
     print(' Calculating Trip Duration')
-    print('='*60)
+    print('+'*60)
 
     start_time = time.time()
 
@@ -217,9 +217,9 @@ def user_stats(df,city):
 
     """Displays statistics on bikeshare users."""
     print(f"\n")
-    print('='*60)
+    print('+'*60)
     print(' Calculating User Information')
-    print('='*60)
+    print('+'*60)
 
     start_time = time.time()
 
@@ -239,9 +239,9 @@ def user_stats(df,city):
 
     else:
         print('\n')
-        print('='*60)
+        print('+'*60)
         print("There is no 'Gender' column in this city")
-        print('='*60)
+        print('+'*60)
 
     # Display earliest, most recent, and most common year of birth
 
@@ -262,16 +262,16 @@ def user_stats(df,city):
         #print("Earliest year of birth: {}\n\nMost recent year of birth: {}\n\nMost common year of birth")
 
         print('\n')
-        print('='*60)
+        print('+'*60)
         print("\nEarliest year of birth: {}\n\nMost recent year of birth: {}\n\nMost common year of birth: {}".format(earliest,
                          most_recent,common))
         print('='*60)
 
     else:
          print('\n')
-         print('='*60)
+         print('+'*60)
          print("There is no 'earliest', 'most recent', and 'most common year of birth' column in this city")
-         print('='*60)
+         print('+'*60)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
 
@@ -323,7 +323,7 @@ def main():
         display_data(df)
 
         restart = input('\nWould you like to restart Bikeshare Program? Enter yes or no.\n')
-        
+
         if restart.lower() != 'yes':
             break
 
